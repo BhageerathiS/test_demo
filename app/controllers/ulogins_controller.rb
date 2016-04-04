@@ -1,9 +1,7 @@
 class UloginsController < ApplicationController
   before_action :set_ulogin, only: [:show, :edit, :update, :destroy]
   
-
   def new
-
   end
 
   def index
@@ -22,10 +20,6 @@ class UloginsController < ApplicationController
   def edit
     @ulogin = Ulogin.find(params[:id])
   end
-    
-
-  
-
 
   def create
     @ulogin = Ulogin.new(ulogin_params)
@@ -40,9 +34,4 @@ class UloginsController < ApplicationController
       end
     end
   end
-
-
-  
-
-
-  end
+end
