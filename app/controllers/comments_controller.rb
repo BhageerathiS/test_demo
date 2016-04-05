@@ -10,7 +10,6 @@ class CommentsController < ApplicationController
   end
 
   # GET /comments/1
-  # GET /comments/1.json
   def show
   end
 
@@ -24,7 +23,6 @@ class CommentsController < ApplicationController
   end
 
   # POST /comments
-  # POST /comments.json
   def create
     @comment = Comment.new(comment_params)
 
