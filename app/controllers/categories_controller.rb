@@ -3,6 +3,8 @@ class CategoriesController < ApplicationController
 
   # GET /categories
   # GET /categories.json
+
+  http_basic_authenticate_with name: "bvj", password: "password", except: [:index, :show]
   def index
     @categories = Category.all
   end

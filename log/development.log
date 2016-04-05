@@ -6746,3 +6746,2425 @@ AbstractController::ActionNotFound (The action 'update' could not be found for U
   Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 11:31:27 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (127.3ms)
+  Rendered ulogins/index.html.erb within layouts/application (139.9ms)
+Completed 200 OK in 555ms (Views: 518.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 11:31:37 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MC1Fo0uY3bWMY1pQOAJz7uQZml5iDXTsse4aCgQ5kOqDsJUnM/r/ZWR64GUfRfKagbX75aAqmxkb5hsamTFvOg==", "ulogin"=>{"name"=>"bgs", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "ulogins" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-04-05 06:01:37.486792"], ["updated_at", "2016-04-05 06:01:37.486792"]]
+  [1m[35m (169.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 241ms (ActiveRecord: 170.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 11:31:37 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 71ms (Views: 47.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 11:31:42 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (30.0ms)
+  Rendered articles/new.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 79ms (Views: 64.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-05 11:31:48 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i88jdSF/XF7wNCvaO4rqdEvy5O46RVh68QJVBeATD/M4UvPxWR1+jhgtke8czWsALl6FVfhit49bClQVfRvwIw==", "article"=>{"title"=>"acd", "content"=>"", "created_by"=>""}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered articles/_form.html.erb (6.5ms)
+  Rendered articles/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 36ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 11:32:00 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-05 11:56:37 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUlogin Load (0.3ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered ulogins/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 16.2ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 11:56:58 +0530
+
+AbstractController::ActionNotFound (The action 'update' could not be found for UloginsController):
+  actionpack (4.2.4) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 11:58:06 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.5ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 11:58:08 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tcqEI/NM/qVyKi0si0AC6LMLXGmDqcARn/SuVstTeo4GV1Sniy7cdZozlxmsB4Oc1qc90kGOL+Q1/K9GVluFXg==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ulogins" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2016-04-05 06:28:08.921863"], ["updated_at", "2016-04-05 06:28:08.921863"]]
+  [1m[35m (198.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 200ms (ActiveRecord: 198.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 11:58:09 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 27ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-05 11:58:10 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 11:58:11 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XohLLb/w75dyTuedX+eb1eBOCskiceyxX8HaudzVKhftFZupx5LNR5pXXah4oBqhheJrcuBWA0T1ydupQd3Vxw==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  app/controllers/ulogins_controller.rb:43:in `update'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.8ms)
+
+
+Started GET "/ulogins/1" for 127.0.0.1 at 2016-04-05 11:58:47 +0530
+Processing by UloginsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template ulogins/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/manju/test_demo/app/views"
+):
+  actionview (4.2.4) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.4) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (19.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/ulogins" for 127.0.0.1 at 2016-04-05 11:58:57 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.7ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 12:00:52 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kHMWX43BzcOzskqcEEmQRDoN3hV4K7dUuc+dBzXmvxEj7sbb9aPvE1ur8Kk3DhEwX6G/rroMWKETx5wXqO5AwQ==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ulogins" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2016-04-05 06:30:52.777901"], ["updated_at", "2016-04-05 06:30:52.777901"]]
+  [1m[36m (191.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 198ms (ActiveRecord: 192.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:00:52 +0530
+
+SyntaxError (/home/manju/test_demo/app/controllers/articles_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/articles_controller.rb:75: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:01:24 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 34ms (Views: 23.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-05 12:01:32 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 12:01:34 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7KM1p3S8EAUvUkiqLDTtqmcj58J7CZ8eMYMwEvyn2DpfPuUjDN4y1cdL8p8Lc2zeAo+GebkucOubizECYa8n6g==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms)
+
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  app/controllers/ulogins_controller.rb:44:in `block in update'
+  app/controllers/ulogins_controller.rb:43:in `update'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/ulogins/1" for 127.0.0.1 at 2016-04-05 12:04:22 +0530
+
+SyntaxError (/home/manju/test_demo/app/controllers/ulogins_controller.rb:58: syntax error, unexpected ':', expecting ')'
+      params.require(:ulogin).permit(:name :emali :encrypted_password)
+                                            ^
+/home/manju/test_demo/app/controllers/ulogins_controller.rb:58: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/ulogins_controller.rb:58: syntax error, unexpected ':', expecting ')'
+  app/controllers/ulogins_controller.rb:58: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.6ms)
+
+
+Started GET "/ulogins/1" for 127.0.0.1 at 2016-04-05 12:04:43 +0530
+
+SyntaxError (/home/manju/test_demo/app/controllers/ulogins_controller.rb:58: syntax error, unexpected ':', expecting ')'
+      params.require(:ulogin).permit(:name :emali :encrypted_password)
+                                            ^
+/home/manju/test_demo/app/controllers/ulogins_controller.rb:58: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/ulogins_controller.rb:58: syntax error, unexpected ':', expecting ')'
+  app/controllers/ulogins_controller.rb:58: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.6ms)
+
+
+Started GET "/ulogins/1" for 127.0.0.1 at 2016-04-05 12:05:51 +0530
+
+SyntaxError (/home/manju/test_demo/app/controllers/ulogins_controller.rb:61: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/ulogins_controller.rb:61: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.3ms)
+
+
+Started GET "/ulogins/1" for 127.0.0.1 at 2016-04-05 12:06:10 +0530
+Processing by UloginsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+ActionView::MissingTemplate (Missing template ulogins/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/manju/test_demo/app/views"
+):
+  actionview (4.2.4) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.4) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (16.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 12:52:26 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.5ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 12:52:28 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3V++6UqVoVdy3frsC9SfziqWFVKzrC+1QugWFWAVT9huwm5tMveDh5rEQNkskx66Tzp06XGLwEDo4BcF/R2wCA==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 07:22:28.692309"], ["updated_at", "2016-04-05 07:22:28.692309"]]
+  [1m[36m (191.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 194ms (ActiveRecord: 191.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:52:28 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-04-05 12:52:30 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 44ms (Views: 28.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-04-05 12:52:32 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-04-05 12:52:33 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CEnKD/u0ssaDXNeDJCIap2veEp1i84KMXZsxUQLZFrK71BqLg9aQFmtFbbYDZZvTDnJzJqDUbXn3kzBBn9HpYg==", "user"=>{"name"=>"", "email"=>""}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:52:35 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 12:52:36 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (9.2ms)
+  Rendered articles/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-05 12:52:45 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N0nUFxpBJwD4PttX4/x7/eW/G14Es2CMV37uOu6BV4iE1ASTYiMF0BAnYWLEu/qJgBN65caUj3n9du8qc4moWA==", "article"=>{"title"=>"Article", "content"=>"a", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-05 12:52:53 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FfIm0GMCmAJlnMcFC/eBlDpnHPBAROV+pBDvGffypTSmb/ZUG2C60o2FfTAssADgX8t9S4JjCosOGO4Javpa5A==", "article"=>{"title"=>"Article", "content"=>"abnvhf", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Article"], ["content", "abnvhf"], ["created_by", "Admin"], ["created_at", "2016-04-05 07:22:53.713831"], ["updated_at", "2016-04-05 07:22:53.713831"]]
+  [1m[36m (101.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 105ms (ActiveRecord: 101.8ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2016-04-05 12:52:53 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:52:56 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-04-05 12:52:58 +0530
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2016-04-05 12:52:59 +0530
+Processing by CategoriesController#new as HTML
+  Rendered categories/_form.html.erb (1.4ms)
+  Rendered categories/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2016-04-05 12:53:04 +0530
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5/hKo+syZlkzXorXkJCyaYzkrIGodd2+VkmhFWGIgxdUZZonk1BEidtHMOK31zMd6UjNOmpSMkv8QaAF/IB8xw==", "category"=>{"name"=>"name"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "name"], ["created_at", "2016-04-05 07:23:04.492081"], ["updated_at", "2016-04-05 07:23:04.492081"]]
+  [1m[35m (218.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/categories/5
+Completed 302 Found in 223ms (ActiveRecord: 219.1ms)
+
+
+Started GET "/categories/5" for 127.0.0.1 at 2016-04-05 12:53:04 +0530
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered categories/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:53:07 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2016-04-05 12:53:10 +0530
+Processing by RolesController#index as HTML
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles"
+  Rendered roles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/roles/new" for 127.0.0.1 at 2016-04-05 12:53:12 +0530
+Processing by RolesController#new as HTML
+  Rendered roles/_form.html.erb (1.4ms)
+  Rendered roles/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/roles" for 127.0.0.1 at 2016-04-05 12:53:15 +0530
+Processing by RolesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GeC0TMOgP57Ihggsf8GJ7dOeL4C5qGPB8p6/jxMVcS6qfWTIu8IdTiCfshlYhgiZtjJOO3uPjDRYlr6fjh2O/g==", "role"=>{"name"=>"namse"}, "commit"=>"Create Role"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "roles" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "namse"], ["created_at", "2016-04-05 07:23:15.918177"], ["updated_at", "2016-04-05 07:23:15.918177"]]
+  [1m[36m (265.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/roles/5
+Completed 302 Found in 268ms (ActiveRecord: 265.4ms)
+
+
+Started GET "/roles/5" for 127.0.0.1 at 2016-04-05 12:53:16 +0530
+Processing by RolesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered roles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:53:17 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20160405072844)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "article_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_comments_on_article_id" ON "comments" ("article_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160405072844"]]
+  [1m[36m (163.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_article_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 12:59:39 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (7.7ms)
+  Rendered ulogins/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 117ms (Views: 112.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-04-05 12:59:39 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-04-05 12:59:39 +0530
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 12:59:42 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0K/K/K2+fwgry5/KtVVZ86CgDRFZ2K7v1aARasRZN1VjMhp41dxd2MPSJf+SEtiHxQxsqpv/QRp/qBB6WVHIhQ==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 07:29:42.695354"], ["updated_at", "2016-04-05 07:29:42.695354"]]
+  [1m[35m (245.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 249ms (ActiveRecord: 246.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:59:42 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 12:59:46 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.2ms)
+  Rendered articles/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 12:59:50 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comment" for 127.0.0.1 at 2016-04-05 12:59:54 +0530
+
+ActionController::RoutingError (No route matches [GET] "/comment"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (20.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.6ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.7ms)
+
+
+Started GET "/comment" for 127.0.0.1 at 2016-04-05 13:03:21 +0530
+
+ActionController::RoutingError (No route matches [GET] "/comment"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/manju/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.0ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 13:03:25 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.3ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:03:27 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DT0PmPSWH4vOnZzNNvl9tIpztzBCVKkx4PFN1gE4iri+oN8cjPQ9WyaEJvgRvvzA79/Wi4BzRsRK+UzGnDB1aA==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 07:33:27.755401"], ["updated_at", "2016-04-05 07:33:27.755401"]]
+  [1m[36m (195.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 199ms (ActiveRecord: 195.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 13:03:27 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.3ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:03:29 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-05 13:03:31 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (7.4ms)
+  Rendered comments/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-04-05 13:03:44 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Eh95VpUphUnIcgCa8XhvbrOWMEl0V9nkIlN+iVMAk9qhgqnS7UunmSBruq/WP+4a1jpR8rZwNhGIW3+ZzghsCg==", "comment"=>{"commenter"=>"mdbndnn", "body"=>",mmvjvv", "article_id"=>"mnnjnnv"}, "commit"=>"Create Comment"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "mdbndnn"], ["body", ",mmvjvv"], ["article_id", 0], ["created_at", "2016-04-05 07:33:44.825926"], ["updated_at", "2016-04-05 07:33:44.825926"]]
+  [1m[36m (256.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments/1
+Completed 302 Found in 260ms (ActiveRecord: 257.2ms)
+
+
+Started GET "/comments/1" for 127.0.0.1 at 2016-04-05 13:03:45 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 0]]
+  Rendered comments/show.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:03:49 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 0]]
+  Rendered comments/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/comments/1" for 127.0.0.1 at 2016-04-05 13:04:46 +0530
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3ZR8zXXl8QNzKqkgeNK3S3iZlNaf6vpQkOiPfWR1SCBuCaxJDYfT05szExVflTY/HTX1bV3NFaU64I5t+X238A==", "id"=>"1"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = ?  [["id", 1]]
+  [1m[36m (140.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments
+Completed 302 Found in 146ms (ActiveRecord: 140.7ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:04:47 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-05 13:04:48 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (1.5ms)
+  Rendered comments/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-04-05 13:04:58 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U5X1601xS+uMUhWTW3FEDIM7TORmZ4FhVsJamb+xGXTgCCVvNRNpO2RLr6Z8NsV45pctX6RAbpT8yluJIrnmpA==", "comment"=>{"commenter"=>"abcd", "body"=>",xxmk", "article_id"=>",knkk"}, "commit"=>"Create Comment"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "abcd"], ["body", ",xxmk"], ["article_id", 0], ["created_at", "2016-04-05 07:34:58.216436"], ["updated_at", "2016-04-05 07:34:58.216436"]]
+  [1m[36m (249.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments/2
+Completed 302 Found in 253ms (ActiveRecord: 249.5ms)
+
+
+Started GET "/comments/2" for 127.0.0.1 at 2016-04-05 13:04:58 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered comments/show.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `article' for #<Comment:0x007fe45a985a30>):
+    12: 
+    13: <p>
+    14:   <strong>Article:</strong>
+    15:   <%= @comment.article %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_comment_path(@comment) %> |
+  app/views/comments/show.html.erb:15:in `_app_views_comments_show_html_erb___4088615472338990640_70309374697820'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:05:21 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 0]]
+  Rendered comments/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/comments/2" for 127.0.0.1 at 2016-04-05 13:05:26 +0530
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3BYjbXeMdv9BDBWiJ1ZwOgCHri7HP4/d++/Nz5xWIMdvi/PpD+5UL6kVr5cAEfFOZSvPlQUYYChR58zfAV7fFw==", "id"=>"2"}
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 2]]
+  [1m[35m (117.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/comments
+Completed 302 Found in 120ms (ActiveRecord: 117.9ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:05:26 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-05 13:06:07 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered comments/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 43ms (Views: 36.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-04-05 13:06:14 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qRJ+esYrydFiqMha00mbWfEhNUWuw67JydiUKpy4ZTUaj67+vknrAYqxcm/0DhotlI1U/mzkQTxj0JU6AbCa5Q==", "comment"=>{"commenter"=>"a", "body"=>"b", "article_id"=>"b"}, "commit"=>"Create Comment"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "a"], ["body", "b"], ["article_id", 0], ["created_at", "2016-04-05 07:36:14.495846"], ["updated_at", "2016-04-05 07:36:14.495846"]]
+  [1m[35m (215.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/comments/3
+Completed 302 Found in 220ms (ActiveRecord: 215.4ms)
+
+
+Started GET "/comments/3" for 127.0.0.1 at 2016-04-05 13:06:14 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 0]]
+  Rendered comments/show.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:06:19 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 0]]
+  Rendered comments/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-05 13:06:23 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (1.2ms)
+  Rendered comments/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:06:24 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 0]]
+  Rendered comments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/comments/3" for 127.0.0.1 at 2016-04-05 13:06:27 +0530
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZTgrs2nx9nC8GBzym2RkpKB8PCmO3NsCzEQESxdjEuzWpfs3EZPUoFQBpse8I+XQxdBdkkz7NPdmTAVbimvtPA==", "id"=>"3"}
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 3]]
+  [1m[35m (146.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/comments
+Completed 302 Found in 149ms (ActiveRecord: 146.9ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:06:27 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-05 13:08:05 +0530
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (1.2ms)
+  Rendered comments/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-04-05 13:08:19 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hal8aXrmynNlyEndnhiIcKByQlrAiOP1RuNnQ24SlfyuNKztAoToo43R8+i5XwkExd4j4QKvDADs62ZT8xpqLA==", "comment"=>{"commenter"=>"b", "body"=>"b", "article_id"=>"1"}, "commit"=>"Create Comment"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "b"], ["body", "b"], ["article_id", 1], ["created_at", "2016-04-05 07:38:19.771721"], ["updated_at", "2016-04-05 07:38:19.771721"]]
+  [1m[36m (215.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments/4
+Completed 302 Found in 217ms (ActiveRecord: 215.2ms)
+
+
+Started GET "/comments/4" for 127.0.0.1 at 2016-04-05 13:08:19 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:08:22 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered comments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/comments/4" for 127.0.0.1 at 2016-04-05 13:08:26 +0530
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bK/lG1dL2pjoMlUsjs+Wwq0RCHIv7DIKDi367pIlmgffMjWfLyn4SAAr7xmpiBe2yL1pye3L3f+kJfv+Dy1l1w==", "id"=>"4"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = ?  [["id", 4]]
+  [1m[36m (128.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments
+Completed 302 Found in 130ms (ActiveRecord: 128.2ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:08:26 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 13:14:27 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.7ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:14:29 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yy/n7dP0N7DJFLKAVIQZhnjXACCgIqSaOdiWstK8Jdl4sjdpq5YVYCENCLVzw5jyHXthm2IFS2+T0JeiT7TaCQ==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 07:44:29.333665"], ["updated_at", "2016-04-05 07:44:29.333665"]]
+  [1m[36m (209.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 214ms (ActiveRecord: 209.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 13:14:29 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/4" for 127.0.0.1 at 2016-04-05 13:14:39 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GvTzvOP/PtC0kmsy/rFcadxMcnJg7lG5rvuqybYW5+ypaSM4m50cAFyL0QfZ9t0dueATyaLJvkwE86vZKx4YPA==", "id"=>"4"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+Filter chain halted as #<Proc:0x007fe45a59cdd8@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/4" for 127.0.0.1 at 2016-04-05 13:14:53 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GvTzvOP/PtC0kmsy/rFcadxMcnJg7lG5rvuqybYW5+ypaSM4m50cAFyL0QfZ9t0dueATyaLJvkwE86vZKx4YPA==", "id"=>"4"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?[0m  [["article_id", 4]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 4]]
+  [1m[36m (115.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 137ms (ActiveRecord: 116.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 13:14:53 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 13:24:23 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-05 13:24:25 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered comments/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 13:24:29 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.5ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:24:32 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QQ8BNm/VHmDQZabSbAUAnls1bmSv7Sunk2GkVCR4QiPyktGyF7c8sDh8HOdLQoHqPpkP323KxFI5aaVEuXC98w==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 07:54:32.037162"], ["updated_at", "2016-04-05 07:54:32.037162"]]
+  [1m[36m (167.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 170ms (ActiveRecord: 167.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 13:24:32 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 13:24:34 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x007fe45a071f98@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 13:24:46 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-05 13:25:02 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eypdU9BcLtzNaugMGpu6B13c19H/TdNApDi61+zhFULIt43XqD4MDCVzUjk93DtzOHC2aj1qPLUOMLvHcenqkg==", "article"=>{"title"=>"Article", "content"=>"mcnjhgbd", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x007fe45a071f98@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-05 13:25:02 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eypdU9BcLtzNaugMGpu6B13c19H/TdNApDi61+zhFULIt43XqD4MDCVzUjk93DtzOHC2aj1qPLUOMLvHcenqkg==", "article"=>{"title"=>"Article", "content"=>"mcnjhgbd", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Article"], ["content", "mcnjhgbd"], ["created_by", "Admin"], ["created_at", "2016-04-05 07:55:02.089487"], ["updated_at", "2016-04-05 07:55:02.089487"]]
+  [1m[35m (182.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 187ms (ActiveRecord: 183.2ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2016-04-05 13:25:02 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.erb within layouts/application (23.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `article_comments_path' for #<#<Class:0x007fe459f0a560>:0x00000000d91020>):
+    17: 
+    18: 
+    19: <h2>Add a comment:</h2>
+    20: <%= form_for([@article, @article.comments.build]) do |f| %>
+    21:   <p>
+    22:     <%= f.label :commenter %><br>
+    23:     <%= f.text_field :commenter %>
+  app/views/articles/show.html.erb:20:in `_app_views_articles_show_html_erb__2533501569809552668_6781960'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 13:42:13 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.6ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:42:16 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QDhfjeqTYB2WR1oMgYk9XYQWeTtJNfIyNxk0NCw9xsrzpY8JkvFCzX5e4Dmmzrwp4boYgIsSHcedETUksTU5Gg==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::MissingTemplate (Missing template ulogins/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/manju/test_demo/app/views"
+):
+  app/controllers/ulogins_controller.rb:28:in `block (2 levels) in create'
+  app/controllers/ulogins_controller.rb:23:in `create'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (16.1ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (23.6ms)
+
+
+Started GET "/ulogins" for 127.0.0.1 at 2016-04-05 13:43:37 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.7ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:43:39 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4IOzlWbMDETi4udc3eAVBNlixyVwlVMRboPAw29pHt5THmMRHq4ulAr7XWn6p5RwvM6mnrKyvOTEi8HT8mHhDg==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 08:13:39.250988"], ["updated_at", "2016-04-05 08:13:39.250988"]]
+  [1m[35m (215.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 219ms (ActiveRecord: 215.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 13:43:39 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 13:54:07 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.5ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:54:19 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9icJsGgDyEstvVBFglP0OC57cBrTzLtUICwinOPzRa1Futk0EGHqm8Wk6nClFHVMS9cRoRHrVKGKJCOMfvu6fQ==", "ulogin"=>{"name"=>"bgs", "emali"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::MissingTemplate (Missing template ulogins/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/manju/test_demo/app/views"
+):
+  app/controllers/ulogins_controller.rb:28:in `block (2 levels) in create'
+  app/controllers/ulogins_controller.rb:23:in `create'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (15.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (24.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 13:57:27 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.2ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:57:35 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zbrxK2xiHHMTUcBubFjMcjFX9qRnLin1TgJEW8+9j19+JyGvFAA+o/tIeltLH00GVPuXH6UJxgDkCkVLUrVwjw==", "ulogin"=>{"name"=>"", "emali"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered ulogins/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:57:54 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zbrxK2xiHHMTUcBubFjMcjFX9qRnLin1TgJEW8+9j19+JyGvFAA+o/tIeltLH00GVPuXH6UJxgDkCkVLUrVwjw==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 08:27:54.360920"], ["updated_at", "2016-04-05 08:27:54.360920"]]
+  [1m[36m (205.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 210ms (ActiveRecord: 206.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 13:57:54 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.3ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 13:58:44 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zbrxK2xiHHMTUcBubFjMcjFX9qRnLin1TgJEW8+9j19+JyGvFAA+o/tIeltLH00GVPuXH6UJxgDkCkVLUrVwjw==", "ulogin"=>{"name"=>"", "emali"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.6ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:00:12 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.6ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:00:14 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MDYnD8U3fls9wAlS0nXS5xbW+iC/aDyJJF8jIA79GeGDq/eLvVVci9XZs2f1MlOTc3qbm31P03yOVyIwk/XmMQ==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (1.8ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:00:18 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 27ms (Views: 21.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:01:53 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.5ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:02:05 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"epKnANLUB/ZYFHX6Modpfq/MP2OM/4OzJdZIyhQBWyPJD3eEqrYlJrANz88VwOgKymBe2E7YbEaP3knaiQmk8w==", "ulogin"=>{"name"=>"", "emali"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password' for #<Ulogin:0x007fe45a77ef48>):
+  app/controllers/ulogins_controller.rb:24:in `block in create'
+  app/controllers/ulogins_controller.rb:23:in `create'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:02:55 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.7ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 22.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:02:57 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qj2hK3d0N2rWSATfzj5APVD7D4hxnOMbzvurtxXpm5sZoHGvDxYVuj5RvurpecFJNVduM7O7DO5k86qniOFkSw==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `password' for #<Ulogin:0x0000000264e518>):
+  app/controllers/ulogins_controller.rb:27:in `block in create'
+  app/controllers/ulogins_controller.rb:26:in `create'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.0ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/ulogins" for 127.0.0.1 at 2016-04-05 14:03:32 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.5ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:03:34 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Ef1bX66IhTU+JAvJ7oDTSmyXSLv9lM+XLs2h2NnoFlD2iXpBtgAxDzhKhoA/YI5TB48mS3RvMv2szeX/m9fiQ==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (3.7ms)
+  Rendered ulogins/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:03:43 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RljpIWym/oOyrqN5DTId1qPpsX3joU8jNPYpFsfNxRT1xTmlFMTcU1q3GUwqdZyixkXQxiGGoNae/igGWsU6xA==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (3.1ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:03:53 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d4gdstAYiqjphk7b9OkoUSQ5FgZ87Jf8/LdyjAO1PiHEFc02qHqoeAGf9O7TrqklQZV3vb7LeAlWv3Ocnr3B8Q==", "ulogin"=>{"name"=>"", "emali"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (3.2ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:04:14 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.5ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:04:27 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KFbS+uKNGEQk4Iz0FNYss4WZdPDRlAzo7od9HKyjBZabywJ+mu86lMz5NsEzka3H4DUVSxOz4x1Ej3wMMav6Rg==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (4.3ms)
+  Rendered ulogins/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:04:33 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OuV//TMoD08lhVDi3PwnSnKzHTyctHSOeDwwoC2KeJqJeK95S0otn82c6tf7u6Y+Fx98h16Tm3vSNDGwsIKHSg==", "ulogin"=>{"name"=>"bgs", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.9ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:04:47 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rIiyEJLyThyR/iiY0Kc4Umfr2GLu4sUyS2KTM54Y7Z8fFWKU6pBszHnnkq334LkmAke52SzFKsfhapIjAxASTw==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.4ms)
+  Rendered ulogins/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:04:56 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8R2t45W2mFIBZ7HMX9P9ptEmWO+SlWQ5xspGuhHhQqRCgH1n7dS6gul+C/l4lHzStIo5VFCyi8xswkeqjOm9dA==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.5ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:00 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eMZk0jGTBJypovlSpXeFgkMmCegZU14uv38xbMTjLXzLW7RWSfEmTEG7Q2eCMAT2JopoU9t0sdsVdzB8WevSrA==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (3.0ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:05 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l+92VLGwXWB9pT+NdWAlaJTf1b0aYDIok+0IIOLCOxskcqbQydJ/sJW8hbhSJ6Qc8XO0BthH3d055Qkwf8rEyw==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.6ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:34 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RH0PiQsGXNv91mGKqmuQCzpm2M5uS3nrYEfXtQeF7mT34N8Nc2R+CxXP27+NLBF/X8q5daxslh7KT9almo0RtA==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (1.7ms)
+  Rendered ulogins/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 20.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:47 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cNlVSygbQJLIXxlRkxXqrgnHtssz7nLGg0GmFLj2CIHDRIXPUHliQiBGo2S0UmvabGvXcPHJnTMpSacEJf73UQ==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.1ms)
+  Rendered ulogins/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:48 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1RmaPDNy8aGN+DP4BNDQSGGElCokP2+6ezYnpTvgnH9mhEq4SxDTcWXhic0jl1E8BCj1keYYgE/RPia1puhjrw==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.6ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:48 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BTSMJ5fsAOSWvKqFH+aJyMxY/CQbXyJ5O4abABOoe9m2qVyj744iNH6lELA4oQi8qfSdn9l4zYyRjpoQjqCECQ==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (4.1ms)
+  Rendered ulogins/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:49 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HW2Cr9Kte4EPXZ3mdNUkuuGL8d8w/Ykrpc+3HqgtX9mu8FIrqs9ZUedEJ9NTkqXOhCeQZPLaZt4Px7YONSWgCQ==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.5ms)
+  Rendered ulogins/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:49 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3TxSr70wtbgoSRebiMvir5KuE+Rr7ABDICRJp/bCl3ZuoYIrxVKXaMBQra6vjGPb9wJyX6nL77aKLEi3a8popg==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (1.5ms)
+  Rendered ulogins/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:50 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TXvBL81OpIfFmC5HPrTIHhNX8qkb4d61Bga5aP4XPo/+5hGrtSyGVy2BlHIZ80lqdvuTEtnGMUCsDrh4Yx/BXw==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (1.7ms)
+  Rendered ulogins/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:50 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1xXRnBeiBOLkBRuZJY7EDyOulfTMygqjmfMphjFja8JkiAEYb8AmMgwcoawCyUV7RgL0Tw7t5VYz+yiWrGuUEg==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (1.9ms)
+  Rendered ulogins/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:50 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C1GhWXHhewax/kyB0XIbeVYbk3UlhGz/3tP01J5PpwW4zHHdCYNZ1lnn9rT2NZoNM7fyzuejgwp02/XEA0dY1Q==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (2.5ms)
+  Rendered ulogins/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:05:51 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ES0JQkoQMfTA/5x0oUTxJAZxUUiJcridJr+FLi5rO8iisNnGMnITJCjmJkGGA3BQY90w80tVV2iMt4Q+s2PEGA==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered ulogins/_form.html.erb (1.7ms)
+  Rendered ulogins/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:06:16 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.6ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:06:26 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+XPy3+ZIayTSGz80blNgEH7zj5UXCdUzqx2/WC63IXFK7iJbnipJ9DoChQFJFOFkG1/uLtUuOsYBFb5Is7/eoQ==", "ulogin"=>{"name"=>"bgs", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "bgs"], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 08:36:26.226781"], ["updated_at", "2016-04-05 08:36:26.226781"]]
+  [1m[35m (209.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 212ms (ActiveRecord: 209.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:06:26 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-05 14:06:32 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered ulogins/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 14:06:39 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FjVqPYyzuWU/ouKFSbKYwOG2CqVMurO9tt8f0636pFClqLq59NGbtde7WLBu9Rm0hBprHo6dXEgc1x7DMPJbgA==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered ulogins/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 14:06:51 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fAtEvzBx9S6oou95TUg/HXBKK8n5Q24PSp3LnrxZRnTPlpQ7SBPX/kC7VUxqD75pFeZKcjtkgfrglcqOIVG5pA==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered ulogins/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 14:06:52 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vkevQDqqJu9ATNcHiUPE3TyY0rALdMu8joEX3l4ffVgN2n/EQsgEP6hVbTKuBEWpWTSzC8lTJEkkiRbOwxeCiA==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered ulogins/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 14:08:28 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2rim0eiGnWF356mGYjeFXQ5isrDxhrQKPc0l8zF2w7NpJXZVkOS/sZ/+E7NFcAQpa87TCzOhW/+XxSTjrH48Yw==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered ulogins/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:09:01 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.6ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:09:04 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZkYyFYTr2u1oHfqxwi+oi4ijI7IMM0L8txRd5er6ahPV2+KR/In4PYAEQITlaCn/7Q9CCc4UrQkdHFz1d/KVww==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 08:39:04.356749"], ["updated_at", "2016-04-05 08:39:04.356749"]]
+  [1m[36m (396.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 399ms (ActiveRecord: 396.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:09:04 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-05 14:09:06 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 14:09:08 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OMiCLWO0G0se/FAcNcJVR41urecCDbGr0U+fcECIKqyLVVKpG9Y5m/bl6ikShdQz6MLMXMAqXl57R55g3YDVfA==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:09:08 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-05 14:09:17 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 14:09:20 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zC6TPR/R3z2nPxDPt5zuT+Oi1UZUlgDe2F3EjUs+Ryd/s0O5Z7P97U8mqvqQ2287hg60/Zax7ytyVcWd1ja49w==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:09:20 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-05 14:09:33 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 14:09:49 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GDUDD0tjbabqMz/CFX6I8I697SqUojmU/sXTfLgP7MirqNOLMwFPdgIqhfcyOQmE6xGMkVaF1mFUzdJsJQcTGA==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:09:49 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/5/edit" for 127.0.0.1 at 2016-04-05 14:09:59 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered articles/_form.html.erb (2.1ms)
+  Rendered articles/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2016-04-05 14:10:02 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:10:04 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/5" for 127.0.0.1 at 2016-04-05 14:10:09 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nFYM4zxs2166JDE6kf5UI2smaYTNXRWP3VOJV02bWXwvy9xnRA75jlI9iw+2udVXDooIPw96+np3W4hH0JOmrA==", "id"=>"5"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?  [["article_id", 5]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 5]]
+  [1m[35m (109.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 121ms (ActiveRecord: 110.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:10:09 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-04-05 14:10:26 +0530
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2016-04-05 14:10:30 +0530
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5JQad6XD1QKwgktoXNwHSknXVuoJIJPluSf3rrGTqolXCcrz3aH30lib8V17m4Y+LHs3UcsHfBATL/a+LJtVWQ==", "id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mArticle Load (0.9ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?  [[nil, 2]]
+SQLite3::SQLException: no such column: articles.user_id: SELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms)
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: articles.user_id: SELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ?):
+  app/controllers/users_controller.rb:59:in `destroy'
+
+
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/manju/.rvm/gems/ruby-2.2.2/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (25.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:11:03 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2016-04-05 14:11:05 +0530
+Processing by RolesController#index as HTML
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles"
+  Rendered roles/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/roles/5" for 127.0.0.1 at 2016-04-05 14:11:07 +0530
+Processing by RolesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pc6POVO8ZJ9ovaTPE9Y0D98iMziHVdHX0+U73Ln1yHYWU1+9K95GT4CkHvo0kbV7uo5Sg0VyPiJ57TrMJP03pg==", "id"=>"5"}
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "roles" WHERE "roles"."id" = ?[0m  [["id", 5]]
+  [1m[35m (117.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/roles
+Completed 302 Found in 120ms (ActiveRecord: 118.0ms)
+
+
+Started GET "/roles" for 127.0.0.1 at 2016-04-05 14:11:08 +0530
+Processing by RolesController#index as HTML
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles"[0m
+  Rendered roles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:11:13 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-04-05 14:11:16 +0530
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/categories/5" for 127.0.0.1 at 2016-04-05 14:11:19 +0530
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eh8Hr1mv38m3OU+0cYI5gziEENV1XZaA/Erv2SqHjXPJgtcrIc39GV8g9YFWxbj3XShxbrd6eXVWQu7Jt49yow==", "id"=>"5"}
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles_categories" WHERE "articles_categories"."category_id" = ?[0m  [["category_id", 5]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "categories" WHERE "categories"."id" = ?  [["id", 5]]
+  [1m[36m (211.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 218ms (ActiveRecord: 212.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-04-05 14:11:20 +0530
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:11:25 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.3ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:11:28 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O4HGdLGtGBmLb1njQXLB0JSz5gMeyUlhIRxPvsGhr1SIHBbwyc86yWN249ZmNUCk8R+HuNzuppSLFE6uXKlQhA==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 08:41:28.990450"], ["updated_at", "2016-04-05 08:41:28.990450"]]
+  [1m[36m (553.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 556ms (ActiveRecord: 553.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:11:29 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 14:11:32 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.3ms)
+  Rendered articles/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:12:58 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.2ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:13:00 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U5ahiGmHf97sgXC1D7CNd8zSIeQnP+6aloJ+Yb5GfHbgC3EMEeVdDgSYyoAo9wwDqX5AX+UYAW88in9xI06Dpg==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 08:43:00.621856"], ["updated_at", "2016-04-05 08:43:00.621856"]]
+  [1m[35m (215.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 219ms (ActiveRecord: 215.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:13:00 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 14:13:03 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.2ms)
+  Rendered articles/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-05 14:13:09 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rXKQdKfYzsrrLqDXKbmsAHm+vSkNZZjHaMHoEa/uBCQe70Dw37rsGgM3GuIO/i10HBLcks9CdzLCyekBMub79A==", "article"=>{"title"=>"", "content"=>"", "created_by"=>""}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered articles/_form.html.erb (3.4ms)
+  Rendered articles/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:13:17 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 14:13:19 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.5ms)
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-05 14:13:31 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hu1aZyUAugbDNb1F87ZqqhmjsA97NnapZOjp4ZZ4mlY1cIrjXWKY1issB3DU8evefA/RtLkRmVzO4OjxC3Blhg==", "article"=>{"title"=>"Article", "content"=>"vgvgfgf", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Article"], ["content", "vgvgfgf"], ["created_by", "Admin"], ["created_at", "2016-04-05 08:43:31.626872"], ["updated_at", "2016-04-05 08:43:31.626872"]]
+  [1m[36m (205.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 208ms (ActiveRecord: 205.5ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2016-04-05 14:13:31 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:13:35 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/6" for 127.0.0.1 at 2016-04-05 14:13:41 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5OpfN4MDkVfWVsalwWmy5LctGBV32EHd6imibPbg9x5Xd4+z+2Gzhz5PfJDmLjOQ0oF5rrX/rihAIaN8a+gIzg==", "id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?[0m  [["article_id", 6]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 6]]
+  [1m[36m (134.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 137ms (ActiveRecord: 134.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:13:41 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-05 14:14:02 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-05 14:14:04 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1UgYraIsG38nsxYAeB8jwSWptT1PeG47Q/rPpZEjXQdm1cgp2k45r8+qrDVfWKK1QAXUho1fgc7p8s61DCui1w==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:14:04 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 14:14:20 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-05 14:14:22 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (1.9ms)
+  Rendered comments/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-04-05 14:14:23 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZHj70cAIVMTm0oIHPsUPvA0w8ylWh7PQNKm7kRIbCbXX5StVuGp2FA7LODIZgo7IaJySkpSgXCWeobqBjxP2ZQ==", "comment"=>{"commenter"=>"", "body"=>"", "article_id"=>""}, "commit"=>"Create Comment"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("commenter", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commenter", ""], ["body", ""], ["created_at", "2016-04-05 08:44:23.573338"], ["updated_at", "2016-04-05 08:44:23.573338"]]
+  [1m[36m (118.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments/5
+Completed 302 Found in 121ms (ActiveRecord: 118.5ms)
+
+
+Started GET "/comments/5" for 127.0.0.1 at 2016-04-05 14:14:23 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered comments/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 14:14:25 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/comments/5" for 127.0.0.1 at 2016-04-05 14:15:42 +0530
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MySeGINbywz4DV5+k/asKuZ9vqMVyh172rSlTtahSRyAuU6c+znp3BAU5Eu0sS1eg9HfGNft8o5wvKReS6m2zA==", "id"=>"5"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = ?  [["id", 5]]
+  [1m[36m (124.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments
+Completed 302 Found in 131ms (ActiveRecord: 124.8ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-05 14:15:43 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-05 14:15:48 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.6ms)
+  Rendered ulogins/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-05 14:15:55 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HfkuQSxKZ8K57SF1nPcFlF/IjFKDZtWzlhfnXCnWaIiuZP7FVChFElH0m0C7sITgOmTt6UFBOkY8H+ZMtN6XWA==", "ulogin"=>{"name"=>"bgshetti", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "bgshetti"], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-05 08:45:55.089865"], ["updated_at", "2016-04-05 08:45:55.089865"]]
+  [1m[36m (276.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 279ms (ActiveRecord: 276.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-05 14:15:55 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-05 14:16:01 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.5ms)
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.1ms)
