@@ -10,6 +10,7 @@ http_basic_authenticate_with name: "bvj", password: "password", except: [:index,
   end
 
   # GET /users/1
+  # GET /users/1.json
   def show
   end
 
