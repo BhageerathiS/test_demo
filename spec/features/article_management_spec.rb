@@ -18,12 +18,7 @@ feature "Article management", :type => :feature do
     expect(page).to have_text("Article was successfully created.")
 
     click_link "Back"
-  end
-
-
-
-
-  scenario "User Editing Article" do
+    
     id = Article.last.id
     visit "/articles/#{id}/edit"
 
@@ -33,6 +28,7 @@ feature "Article management", :type => :feature do
     click_button "Update Article"
 
     expect(page).to have_text("Article was successfully updated.")
+
   end
 
   

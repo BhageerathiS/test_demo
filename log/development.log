@@ -9980,3 +9980,849 @@ Processing by ArticlesController#index as HTML
   [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
   Rendered articles/index.html.erb within layouts/application (10.4ms)
 Completed 200 OK in 35ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2016-04-11 14:46:36 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 26.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:46:37 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 14:47:45 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.8ms)
+  Rendered articles/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 14:47:58 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlEtfIZ5MCa0S3oglgHgslNTjWOFTbt6vEhR0OZR6NKgNnA9DFd7Ct4aRXDZfsmAvtZQ169ejEFXGo7r3CcW3Q==", "article"=>{"title"=>"Article", "content"=>"abcde", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Article"], ["content", "abcde"], ["created_by", "Admin"], ["created_at", "2016-04-11 09:17:58.237109"], ["updated_at", "2016-04-11 09:17:58.237109"]]
+  [1m[36m (164.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/14
+Completed 302 Found in 169ms (ActiveRecord: 164.4ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2016-04-11 14:47:58 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/14/edit" for 127.0.0.1 at 2016-04-11 14:48:12 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered articles/_form.html.erb (1.7ms)
+  Rendered articles/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/articles/14" for 127.0.0.1 at 2016-04-11 14:49:27 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w1v6U19h4u7GN0VdKxX8WBMNFTpsAndHfS6zkT14bi4pPKcS1U+pwqxmeg1katVq/ojIjkYRQHyWfGyqBw6QIQ==", "article"=>{"title"=>"Article", "content"=>"abcde", "created_by"=>"Admin"}, "commit"=>"Update Article", "id"=>"14"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/14
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2016-04-11 14:49:27 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:49:39 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 14:49:44 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 14:50:00 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nb2lx8NZ+TQzuw5qfEHFfogTpWv2pbV19jiK+Se+98t32viGSXeyGFnqMTozPuxMZZZ439y2gk4dalXCHcgJxA==", "article"=>{"title"=>"Article", "content"=>"vjfng", "created_by"=>"User56"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Article"], ["content", "vjfng"], ["created_by", "User56"], ["created_at", "2016-04-11 09:20:00.358691"], ["updated_at", "2016-04-11 09:20:00.358691"]]
+  [1m[35m (236.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/15
+Completed 302 Found in 239ms (ActiveRecord: 236.3ms)
+
+
+Started GET "/articles/15" for 127.0.0.1 at 2016-04-11 14:50:00 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 15]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:50:09 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 14:50:15 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.3ms)
+  Rendered articles/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 14:50:23 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C7gcxW1hCkZeGJ8JlOSu8frT0P4V8V05U2GXKzmUjmHh30GE509BajRJoFnbm4fDF1YNSj/iagK4M0gQA+Jwbg==", "article"=>{"title"=>"dwddffcsc", "content"=>"dsdcss", "created_by"=>"cvcvv"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "dwddffcsc"], ["content", "dsdcss"], ["created_by", "cvcvv"], ["created_at", "2016-04-11 09:20:23.220264"], ["updated_at", "2016-04-11 09:20:23.220264"]]
+  [1m[35m (203.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/16
+Completed 302 Found in 206ms (ActiveRecord: 203.8ms)
+
+
+Started GET "/articles/16" for 127.0.0.1 at 2016-04-11 14:50:23 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:50:24 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/16/edit" for 127.0.0.1 at 2016-04-11 14:52:33 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered articles/_form.html.erb (1.6ms)
+  Rendered articles/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/16" for 127.0.0.1 at 2016-04-11 14:52:37 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:52:41 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-11 14:52:49 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-11 14:53:17 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jj2Dh64+7/H/0qIqVO5H8gNISMPNz3gX8uagDJTND5hkWt7GJBCk3ZWDnXobkW7A7s2Vd+fcTywZtH83rrvxlw==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:53:17 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 14:53:19 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 14:53:25 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BVFDUmeAHbQeDo7dB41jXX+6DwyXR1Z2EONX5XFowzvvNh4T7a5WmHRfsY1I8kpvkj/SuL1UYU37sYjeSx49NA==", "article"=>{"title"=>"mmvnjdgj", "content"=>"kjnnjijn", "created_by"=>"nnjknin"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "mmvnjdgj"], ["content", "kjnnjijn"], ["created_by", "nnjknin"], ["created_at", "2016-04-11 09:23:25.525347"], ["updated_at", "2016-04-11 09:23:25.525347"]]
+  [1m[35m (244.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/17
+Completed 302 Found in 248ms (ActiveRecord: 244.9ms)
+
+
+Started GET "/articles/17" for 127.0.0.1 at 2016-04-11 14:53:25 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/17" for 127.0.0.1 at 2016-04-11 14:54:46 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:54:51 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/17/edit" for 127.0.0.1 at 2016-04-11 14:56:20 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered articles/_form.html.erb (1.4ms)
+  Rendered articles/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:57:58 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/17/edit" for 127.0.0.1 at 2016-04-11 15:13:07 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered articles/_form.html.erb (1.9ms)
+  Rendered articles/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 15:13:15 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.4ms)
+  Rendered articles/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 15:13:27 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qVD2TsF3YxG5VC2wkejE+2vRAyunPtLStltTcUsCYg4wh6YsSuWoCy0b+aNOIohACqZuISPzHChi7J2/1r3hw==", "article"=>{"title"=>"hfhfhfd", "content"=>"cfhfbh", "created_by"=>"vffgdg"}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "hfhfhfd"], ["content", "cfhfbh"], ["created_by", "vffgdg"], ["created_at", "2016-04-11 09:43:27.229709"], ["updated_at", "2016-04-11 09:43:27.229709"]]
+  [1m[35m (211.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/18
+Completed 302 Found in 215ms (ActiveRecord: 212.0ms)
+
+
+Started GET "/articles/18" for 127.0.0.1 at 2016-04-11 15:13:27 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 18]]
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 15:13:33 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 15:16:40 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.8ms)
+  Rendered articles/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 15:16:52 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jsLMITcZAoitgkq2QZ6QoElFjv2V5jCwuKm6F0hoGVxkpZFgvTdJpMfTdeYO4bmSpMBTSb/1B4tT+2Usch7nUw==", "article"=>{"title"=>"Article", "content"=>"vhdyffj", "created_by"=>"vbfhfjf"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Article"], ["content", "vhdyffj"], ["created_by", "vbfhfjf"], ["created_at", "2016-04-11 09:46:52.789263"], ["updated_at", "2016-04-11 09:46:52.789263"]]
+  [1m[36m (219.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/19
+Completed 302 Found in 222ms (ActiveRecord: 219.4ms)
+
+
+Started GET "/articles/19" for 127.0.0.1 at 2016-04-11 15:16:53 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 15:16:56 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 16:03:39 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 16:03:45 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rz1/ZhXUhbxs1yxXImy8pr/yIdVKgFH+uuajGQB5cnhFWiInn/rOkAaGEwdtE5WUUnf8YWCTZsVRtHwiOg+Mdw==", "article"=>{"title"=>"nygyhgujj", "content"=>"hjnbghjn", "created_by"=>"jjnhjkmnjkkl"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "nygyhgujj"], ["content", "hjnbghjn"], ["created_by", "jjnhjkmnjkkl"], ["created_at", "2016-04-11 10:33:45.445778"], ["updated_at", "2016-04-11 10:33:45.445778"]]
+  [1m[35m (212.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/20
+Completed 302 Found in 215ms (ActiveRecord: 212.6ms)
+
+
+Started GET "/articles/20" for 127.0.0.1 at 2016-04-11 16:03:45 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 20]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 16:03:50 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.3ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-11 16:17:22 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.2ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-11 16:19:44 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TsbHKi5t4gWGDS66oy+dL/p2fSv649m37ReJTP+SAnWkoZprpEOpKexcEersULQdF/Ogn9Dw7owGRVZ3xeT8eg==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-11 10:49:44.030125"], ["updated_at", "2016-04-11 10:49:44.030125"]]
+  [1m[35m (233.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 236ms (ActiveRecord: 233.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 16:19:44 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 16:25:26 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.5ms)
+  Rendered articles/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 16:25:32 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2uXajGYZBlVAZxrqTZx3+VqDe9a6I0DRWMhMh4FFWVwwgofN7DdNeSo2JboC417LtwamYpAwd+qzmpO8uzOnUw==", "article"=>{"title"=>"fjgeigjnbnk", "content"=>"njhnjnk", "created_by"=>"kljknkk"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "fjgeigjnbnk"], ["content", "njhnjnk"], ["created_by", "kljknkk"], ["created_at", "2016-04-11 10:55:32.016530"], ["updated_at", "2016-04-11 10:55:32.016530"]]
+  [1m[36m (238.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/21
+Completed 302 Found in 242ms (ActiveRecord: 238.8ms)
+
+
+Started GET "/articles/21" for 127.0.0.1 at 2016-04-11 16:25:32 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 21]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 16:25:38 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-11 16:37:41 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 47ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-11 16:37:42 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (4.7ms)
+  Rendered comments/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-04-11 16:37:52 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"va6l2YDT3W4paDNPn7GMnwx+VyiGoA2u3UHAR78IzHdXyfiYCv2WQkM5DB/QzqWt4fuKnKyzOpU2Ex98hX4yeA==", "comment"=>{"commenter"=>"mdbndnn", "body"=>"yhhhjjk", "article_id"=>"buuhhuij"}, "commit"=>"Create Comment"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "mdbndnn"], ["body", "yhhhjjk"], ["article_id", 0], ["created_at", "2016-04-11 11:07:52.885412"], ["updated_at", "2016-04-11 11:07:52.885412"]]
+  [1m[35m (253.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/comments/6
+Completed 302 Found in 258ms (ActiveRecord: 254.4ms)
+
+
+Started GET "/comments/6" for 127.0.0.1 at 2016-04-11 16:37:53 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 0]]
+  Rendered comments/show.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-11 16:40:58 +0530
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 0]]
+  Rendered comments/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-11 16:40:59 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (3.5ms)
+  Rendered comments/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-04-11 16:41:09 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d3PyVnR5af9segQ5oI2Og8jiiR3solqmod7U6ZlMSfqdFK8X/lci0wYrO2nv8qexJWdUqcaxbZ1KjAvSozq39Q==", "comment"=>{"commenter"=>"Admin", "body"=>"hhkjbkj", "article_id"=>"jknhkjk"}, "commit"=>"Create Comment"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "Admin"], ["body", "hhkjbkj"], ["article_id", 0], ["created_at", "2016-04-11 11:11:09.031695"], ["updated_at", "2016-04-11 11:11:09.031695"]]
+  [1m[36m (234.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments/7
+Completed 302 Found in 237ms (ActiveRecord: 234.5ms)
+
+
+Started GET "/comments/7" for 127.0.0.1 at 2016-04-11 16:41:09 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 0]]
+  Rendered comments/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2016-04-11 16:41:45 +0530
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 0]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 0]]
+  Rendered comments/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments/new" for 127.0.0.1 at 2016-04-11 16:41:47 +0530
+Processing by CommentsController#new as HTML
+  Rendered comments/_form.html.erb (2.3ms)
+  Rendered comments/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2016-04-11 16:41:48 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HMZ9x6JcuMV2zBcZ1HYhH0UFWk1ObbUGOQfa7EP3Fx72oSCGKHLz6RydKEmbCQgtqICH+WR+gj3SVQXXeYHpEQ==", "comment"=>{"commenter"=>"", "body"=>"", "article_id"=>""}, "commit"=>"Create Comment"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("commenter", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["commenter", ""], ["body", ""], ["created_at", "2016-04-11 11:11:48.481050"], ["updated_at", "2016-04-11 11:11:48.481050"]]
+  [1m[36m (178.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/comments/8
+Completed 302 Found in 181ms (ActiveRecord: 178.4ms)
+
+
+Started GET "/comments/8" for 127.0.0.1 at 2016-04-11 16:41:48 +0530
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered comments/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-11 16:44:21 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.4ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-11 16:44:23 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uACRB7TGvyPNv0rF0lNxe9EmJPzHTrHa7hx48IlLYCRSZ8xGPuj0D6fudZWdLFhJPKP5SO1dhuEFTqfLsz2eKw==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-11 11:14:23.967337"], ["updated_at", "2016-04-11 11:14:23.967337"]]
+  [1m[36m (232.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 235ms (ActiveRecord: 232.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 16:44:24 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2016-04-11 16:44:27 +0530
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 16:58:04 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`[0m
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-11 17:03:26 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-11 17:06:01 +0530
+Processing by UloginsController#index as HTML
+  Rendered ulogins/_form.html.erb (1.1ms)
+  Rendered ulogins/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ulogins" for 127.0.0.1 at 2016-04-11 17:06:06 +0530
+Processing by UloginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oEgJa8muWY746HIBNx69r8w2RZXzL1mvzjs75ADF+2RKL1QqQ4ASopK5TVF4YZSdIbOYIdk8bpQlaeTfOrMFaw==", "ulogin"=>{"name"=>"", "emali"=>"manjunath.p@nighthack.in", "password"=>"[FILTERED]"}, "commit"=>"Create Ulogin"}
+Unpermitted parameter: password
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "ulogins" ("name", "emali", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["emali", "manjunath.p@nighthack.in"], ["created_at", "2016-04-11 11:36:06.868459"], ["updated_at", "2016-04-11 11:36:06.868459"]]
+  [1m[36m (273.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 276ms (ActiveRecord: 274.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:07 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/21" for 127.0.0.1 at 2016-04-11 17:06:11 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uukGhRLr7eI1D21cJgU9iaOlKK7vtzAEQ/YuZeU+sgRQjlvEmMWmzl9eUgxpehS7TiD1GsWkBz+opPFe30hMCw==", "id"=>"21"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?  [["article_id", 21]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 21]]
+  [1m[35m (171.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 179ms (ActiveRecord: 172.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:11 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/20" for 127.0.0.1 at 2016-04-11 17:06:14 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mmcaEPWLkuTqladmL0g03bJFEYyROzZMtpB9k427OUxwAEdRf6XZyIDEmDZgNx3vX8DMOLsoAXddwqKot83HQw==", "id"=>"20"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 20]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?[0m  [["article_id", 20]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 20]]
+  [1m[36m (124.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 127ms (ActiveRecord: 124.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:14 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/articles/19" for 127.0.0.1 at 2016-04-11 17:06:17 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NKXe++rvX0ftwn35A9tOZN+DxIAJ5l2o68+WbrwdzanewoO6YMEUa4eTQqlMpGdWMgYZNCP1apMAnUlVhmszpg==", "id"=>"19"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?  [["article_id", 19]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 19]]
+  [1m[35m (132.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 135ms (ActiveRecord: 132.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:17 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/18" for 127.0.0.1 at 2016-04-11 17:06:20 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4F2uuEGip5FEil7s0OgqG4qJrWS6HJ9w59yZcLeJN4kKOvP5y4zsvS7bYbyflwMpZwxw0JAPqEsMjkZLjf/Jhg==", "id"=>"18"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?[0m  [["article_id", 18]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 18]]
+  [1m[36m (137.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 141ms (ActiveRecord: 138.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:20 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/17" for 127.0.0.1 at 2016-04-11 17:06:23 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YCJC4UjqYHZCu4LGw4xfU3J/c9LTQkGnM4jVS6QTXtKKRR+gwsQrWijqvZaM83Zhn/quZvlRdpzY2gpwnmWg3Q==", "id"=>"17"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?  [["article_id", 17]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 17]]
+  [1m[35m (122.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 125ms (ActiveRecord: 122.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:23 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/16" for 127.0.0.1 at 2016-04-11 17:06:26 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0GrzETFpdZTuc7g0b+cgFgZx1keVZannFusxbpNmlHA6Da5Qu0c+uIQih2QgmAkk6/QL8792ntz9ue5VqRBqfw==", "id"=>"16"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 16]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?[0m  [["article_id", 16]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 16]]
+  [1m[36m (151.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 154ms (ActiveRecord: 151.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:27 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/15" for 127.0.0.1 at 2016-04-11 17:06:31 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GYN1Jpif3LDMDtoXpjQnoo9bTnkPtaeRKbm7rKPFQh3z5ChnErGXnKZf5UfpSw6QYt6TzSWmkKrC62SXmbO8Eg==", "id"=>"15"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?  [["article_id", 15]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 15]]
+  [1m[35m (156.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 159ms (ActiveRecord: 156.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:31 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/14" for 127.0.0.1 at 2016-04-11 17:06:33 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1RqkyuYOF4FWTFf44SKlClBrzltajSTBBvGPFFKWva0/ffmLbCBcrTwdaKiuXYw4ve4T73CeE/rto1AvaOBDog==", "id"=>"14"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?[0m  [["article_id", 14]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 14]]
+  [1m[36m (228.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 230ms (ActiveRecord: 228.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:33 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.4ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/articles/13" for 127.0.0.1 at 2016-04-11 17:06:36 +0530
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Fb3XpbiBvmdbQUFZUnCqNYmXgvXgNooaAAi9+Kx4Qp3/2orkMq/1SzEQfgkdD4MHZBJfQcolvSHrWmLDlg68kg==", "id"=>"13"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = ?  [["article_id", 13]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 13]]
+  [1m[35m (124.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 127ms (ActiveRecord: 124.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:36 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 17:06:39 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.5ms)
+  Rendered articles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 17:06:41 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qOus4Vu66NNUZUNjijSgOHwm8vBqj9ldzHtR275QBPRCjPGg0ZSj/z40fDPFS4kKkaMvRECc7mYnKY7ghCb6+w==", "article"=>{"title"=>"", "content"=>"", "created_by"=>""}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered articles/_form.html.erb (3.7ms)
+  Rendered articles/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 17:06:47 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AhwQvcYW5bQ3cOKRO9eZ0AWM3DHsRceFUL6eJLwno+voe038TDiumF0h3cF0qLDi6AkBhcZW8L677EEfhlFd5A==", "article"=>{"title"=>"gdhgru", "content"=>"jhhiuhijj", "created_by"=>"ljjijkioio;"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "gdhgru"], ["content", "jhhiuhijj"], ["created_by", "ljjijkioio;"], ["created_at", "2016-04-11 11:36:47.953089"], ["updated_at", "2016-04-11 11:36:47.953089"]]
+  [1m[36m (225.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/22
+Completed 302 Found in 228ms (ActiveRecord: 225.4ms)
+
+
+Started GET "/articles/22" for 127.0.0.1 at 2016-04-11 17:06:48 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 17:06:51 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/22/edit" for 127.0.0.1 at 2016-04-11 17:06:56 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/articles/22" for 127.0.0.1 at 2016-04-11 17:06:57 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g7mnST7tFlIBdy0U4ciwCCkcsli4C7QisUuL57a35L1p3voItMNdfmsmEkSut5k6xJlv7JIYgxlaGVTcjMEasg==", "article"=>{"title"=>"gdhgru", "content"=>"jhhiuhijj", "created_by"=>"ljjijkioio;"}, "commit"=>"Update Article", "id"=>"22"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 22]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/22
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/22" for 127.0.0.1 at 2016-04-11 17:06:57 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.1ms)
