@@ -9951,3 +9951,32 @@ Processing by UloginsController#edit as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
   Rendered ulogins/edit.html.erb within layouts/application (3.1ms)
 Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ulogins/1/edit" for 127.0.0.1 at 2016-04-11 14:07:21 +0530
+Processing by UloginsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered ulogins/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/ulogins/1" for 127.0.0.1 at 2016-04-11 14:07:23 +0530
+Processing by UloginsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3ayocOV+YEl71s+93Do4pG/iOYfrqrMVoEkCs5rrCtk3y/Uxb1ArZRGH8O2TRRGWgmfkM8G5hC5LG92IoJ301g==", "ulogin"=>{"old_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirm_password"=>"[FILTERED]"}, "commit"=>"Update Ulogin", "id"=>"1"}
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins" WHERE "ulogins"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Unpermitted parameters: old_password, new_password, confirm_password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:07:23 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 35ms (Views: 29.3ms | ActiveRecord: 0.3ms)

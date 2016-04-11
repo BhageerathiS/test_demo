@@ -1905,3 +1905,57 @@ Processing by ArticlesController#show as HTML
   Rendered articles/show.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 14:20:30 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (9.9ms)
+  Rendered articles/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 301ms (Views: 287.6ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 14:20:30 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 14:20:30 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 14:20:31 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:50:31.470764', '2016-04-11 08:50:31.470764')
+  [1m[36m (81.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:55156/articles/17
+Completed 302 Found in 92ms (ActiveRecord: 82.0ms)
+Started GET "/articles/17" for 127.0.0.1 at 2016-04-11 14:20:31 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 17 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 14:20:31 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  `ulogins`.* FROM `ulogins`  ORDER BY `ulogins`.`id` ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 7ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1
+Started GET "/articles/17/edit" for 127.0.0.1 at 2016-04-11 14:20:31 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 17 LIMIT 1[0m
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/17" for 127.0.0.1 at 2016-04-11 14:20:32 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"17"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 17 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:50:32.189428' WHERE `articles`.`id` = 17
+  [1m[36m (96.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:55156/articles/17
+Completed 302 Found in 102ms (ActiveRecord: 97.3ms)
+Started GET "/articles/17" for 127.0.0.1 at 2016-04-11 14:20:32 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 17 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
