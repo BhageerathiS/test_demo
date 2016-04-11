@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
   # GET /articles.json
 
 
-http_basic_authenticate_with name: "bvj", password: "password", except: [:index, :show]
+#http_basic_authenticate_with name: "bvj", password: "password", except: [:index, :show]
 
 
 

@@ -1,0 +1,1907 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:26:44 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000003aa6e70@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 47ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:26:55 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (87.3ms)
+  Rendered articles/new.html.erb within layouts/application (92.6ms)
+Completed 200 OK in 823ms (Views: 727.9ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:26:56 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:26:56 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:28:30 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000003a594b8@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:28:37 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.5ms)
+  Rendered articles/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 237ms (Views: 217.0ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:28:37 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:28:37 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:28:56 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x0000000435ee78@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:29:01 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.7ms)
+  Rendered articles/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 225ms (Views: 207.2ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:29:02 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:29:02 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:29:58 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000003214668@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:30:04 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (17.1ms)
+  Rendered articles/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 231ms (Views: 209.7ms | ActiveRecord: 0.9ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:30:04 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:30:04 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:31:03 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000004789de0@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:31:08 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (17.4ms)
+  Rendered articles/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 243ms (Views: 220.4ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:31:08 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:31:08 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:32:32 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000003ad1968@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:32:37 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (18.0ms)
+  Rendered articles/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 228ms (Views: 206.9ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:32:37 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:32:37 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:32:38 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>""}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00000003ad1968@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:32:38 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>""}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:32:38 +0530
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:32:38 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:35:12 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000004608e08@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:35:16 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.9ms)
+  Rendered articles/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 224ms (Views: 205.5ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:35:17 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:35:17 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:35:51 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000003a6f7b8@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:35:55 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.7ms)
+  Rendered articles/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 226ms (Views: 209.3ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:35:56 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:35:56 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:35:57 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00000003a6f7b8@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:35:57 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:05:57.262955"], ["updated_at", "2016-04-11 06:05:57.262955"]]
+  [1m[36m (243.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:45135/articles/1
+Completed 302 Found in 251ms (ActiveRecord: 244.4ms)
+Started GET "/articles/1" for 127.0.0.1 at 2016-04-11 11:35:57 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:35:57 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:35:57 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:40:53 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000003f0f700@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:40:58 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (17.5ms)
+  Rendered articles/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 243ms (Views: 220.0ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:40:58 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:40:58 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:40:59 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00000003f0f700@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:40:59 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:10:59.867611"], ["updated_at", "2016-04-11 06:10:59.867611"]]
+  [1m[36m (234.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:57802/articles/2
+Completed 302 Found in 244ms (ActiveRecord: 234.9ms)
+Started GET "/articles/2" for 127.0.0.1 at 2016-04-11 11:41:00 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:41:00 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:41:00 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/2/edit" for 127.0.0.1 at 2016-04-11 11:41:00 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 2]]
+Filter chain halted as #<Proc:0x00000003f0f700@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:44:43 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000004d2c450@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:44:54 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (17.4ms)
+  Rendered articles/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 232ms (Views: 211.7ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:44:54 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:44:54 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:44:55 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00000004d2c450@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:44:55 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:14:55.956949"], ["updated_at", "2016-04-11 06:14:55.956949"]]
+  [1m[36m (224.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:53722/articles/3
+Completed 302 Found in 230ms (ActiveRecord: 225.2ms)
+Started GET "/articles/3" for 127.0.0.1 at 2016-04-11 11:44:56 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:44:56 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:44:56 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/3/edit" for 127.0.0.1 at 2016-04-11 11:44:56 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 3]]
+Filter chain halted as #<Proc:0x00000004d2c450@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:47:37 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x000000046b4a50@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:47:42 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (18.0ms)
+  Rendered articles/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 271ms (Views: 253.2ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:47:42 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:47:42 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:47:43 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x000000046b4a50@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:47:43 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:17:43.775192"], ["updated_at", "2016-04-11 06:17:43.775192"]]
+  [1m[36m (246.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:57680/articles/4
+Completed 302 Found in 251ms (ActiveRecord: 246.4ms)
+Started GET "/articles/4" for 127.0.0.1 at 2016-04-11 11:47:44 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:47:44 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:47:44 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/4/edit" for 127.0.0.1 at 2016-04-11 11:47:44 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+Filter chain halted as #<Proc:0x000000046b4a50@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:53:39 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000003341b08@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:53:47 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (18.5ms)
+  Rendered articles/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 228ms (Views: 211.6ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:53:47 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:53:47 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:53:48 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00000003341b08@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:53:48 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:23:48.683149"], ["updated_at", "2016-04-11 06:23:48.683149"]]
+  [1m[36m (228.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:60324/articles/5
+Completed 302 Found in 233ms (ActiveRecord: 228.9ms)
+Started GET "/articles/5" for 127.0.0.1 at 2016-04-11 11:53:48 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:53:48 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:53:48 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/5/edit" for 127.0.0.1 at 2016-04-11 11:53:49 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 5]]
+Filter chain halted as #<Proc:0x00000003341b08@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:55:02 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x0000000470dc18@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:55:21 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (18.2ms)
+  Rendered articles/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 232ms (Views: 215.2ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:55:21 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:55:21 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:55:22 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x0000000470dc18@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:55:22 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:25:22.874339"], ["updated_at", "2016-04-11 06:25:22.874339"]]
+  [1m[36m (215.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:47307/articles/6
+Completed 302 Found in 220ms (ActiveRecord: 215.9ms)
+Started GET "/articles/6" for 127.0.0.1 at 2016-04-11 11:55:23 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:55:23 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:55:23 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:56:12 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000004cb44f0@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:56:19 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (20.1ms)
+  Rendered articles/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 228ms (Views: 209.6ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:56:20 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:56:20 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:56:21 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00000004cb44f0@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:56:21 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:26:21.321754"], ["updated_at", "2016-04-11 06:26:21.321754"]]
+  [1m[36m (223.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:37193/articles/7
+Completed 302 Found in 228ms (ActiveRecord: 223.9ms)
+Started GET "/articles/7" for 127.0.0.1 at 2016-04-11 11:56:21 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:56:21 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:56:21 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/7/edit" for 127.0.0.1 at 2016-04-11 11:56:21 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+Filter chain halted as #<Proc:0x00000004cb44f0@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:56:48 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x000000049cef10@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:56:55 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (17.5ms)
+  Rendered articles/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 238ms (Views: 218.0ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:56:55 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:56:55 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:56:56 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x000000049cef10@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:56:56 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:26:56.769644"], ["updated_at", "2016-04-11 06:26:56.769644"]]
+  [1m[36m (226.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:55903/articles/8
+Completed 302 Found in 232ms (ActiveRecord: 226.4ms)
+Started GET "/articles/8" for 127.0.0.1 at 2016-04-11 11:56:57 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:56:57 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:56:57 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/8/edit" for 127.0.0.1 at 2016-04-11 11:56:57 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+Filter chain halted as #<Proc:0x000000049cef10@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:57:24 +0530
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00000001f27d70@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 11:57:30 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (19.2ms)
+  Rendered articles/new.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 221ms (Views: 203.2ms | ActiveRecord: 0.8ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:57:30 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:57:30 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:57:31 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00000001f27d70@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 11:57:31 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:27:31.574801"], ["updated_at", "2016-04-11 06:27:31.574801"]]
+  [1m[36m (218.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:34538/articles/9
+Completed 302 Found in 222ms (ActiveRecord: 218.4ms)
+Started GET "/articles/9" for 127.0.0.1 at 2016-04-11 11:57:31 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:57:31 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:57:31 +0530
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-04-11 11:57:32 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+Filter chain halted as #<Proc:0x00000001f27d70@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-04-11 11:58:52 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+Filter chain halted as #<Proc:0x00000000f0e628@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.3ms)
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-04-11 11:58:58 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered articles/_form.html.erb (17.9ms)
+  Rendered articles/edit.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 210ms (Views: 208.9ms | ActiveRecord: 0.1ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 11:58:59 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 11:58:59 +0530
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-04-11 11:59:00 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 9]]
+Filter chain halted as #<Proc:0x00000000f0e628@/home/manju/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-04-11 11:59:00 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "articles" SET "title" = ?, "content" = ?, "created_by" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "Article"], ["content", "Updated Article"], ["created_by", "User66"], ["updated_at", "2016-04-11 06:29:00.303668"], ["id", 9]]
+  [1m[35m (5008.6ms)[0m  commit transaction
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 5017ms (ActiveRecord: 5009.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:17:14 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.9ms)
+  Rendered articles/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 254ms (Views: 220.3ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:17:14 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:17:14 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:17:15 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:47:15.365937"], ["updated_at", "2016-04-11 06:47:15.365937"]]
+  [1m[36m (272.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:42551/articles/10
+Completed 302 Found in 279ms (ActiveRecord: 273.3ms)
+Started GET "/articles/10" for 127.0.0.1 at 2016-04-11 12:17:15 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/10/edit" for 127.0.0.1 at 2016-04-11 12:17:15 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/10" for 127.0.0.1 at 2016-04-11 12:17:15 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"10"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "articles" SET "title" = ?, "content" = ?, "created_by" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "Article"], ["content", "Updated Article"], ["created_by", "User66"], ["updated_at", "2016-04-11 06:47:15.850959"], ["id", 10]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/10
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+Started GET "/articles/10" for 127.0.0.1 at 2016-04-11 12:17:15 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:17:32 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (17.6ms)
+  Rendered articles/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 251ms (Views: 219.0ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:17:33 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:17:33 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:17:34 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:47:34.239760"], ["updated_at", "2016-04-11 06:47:34.239760"]]
+  [1m[36m (270.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:49394/articles/11
+Completed 302 Found in 275ms (ActiveRecord: 270.6ms)
+Started GET "/articles/11" for 127.0.0.1 at 2016-04-11 12:17:34 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/11/edit" for 127.0.0.1 at 2016-04-11 12:17:34 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mArticle Load (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered articles/_form.html.erb (1.3ms)
+  Rendered articles/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+Started PATCH "/articles/11" for 127.0.0.1 at 2016-04-11 12:17:34 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "articles" SET "title" = ?, "content" = ?, "created_by" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "Article"], ["content", "Updated Article"], ["created_by", "User66"], ["updated_at", "2016-04-11 06:47:34.711866"], ["id", 11]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/11
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+Started GET "/articles/11" for 127.0.0.1 at 2016-04-11 12:17:34 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/11/edit" for 127.0.0.1 at 2016-04-11 12:18:25 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered articles/_form.html.erb (18.0ms)
+  Rendered articles/edit.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 233ms (Views: 215.4ms | ActiveRecord: 0.3ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:18:25 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:18:25 +0530
+Started PATCH "/articles/11" for 127.0.0.1 at 2016-04-11 12:18:26 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "articles" SET "title" = ?, "content" = ?, "created_by" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "Article"], ["content", "Updated Article"], ["created_by", "User66"], ["updated_at", "2016-04-11 06:48:26.402640"], ["id", 11]]
+  [1m[35m (5007.6ms)[0m  commit transaction
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 5013ms (ActiveRecord: 5008.5ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:18:31 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:18:31 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:48:31.534311"], ["updated_at", "2016-04-11 06:48:31.534311"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/12
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+Started GET "/articles/12" for 127.0.0.1 at 2016-04-11 12:18:31 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/11/edit" for 127.0.0.1 at 2016-04-11 12:21:38 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered articles/_form.html.erb (17.1ms)
+  Rendered articles/edit.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 229ms (Views: 213.6ms | ActiveRecord: 0.3ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:21:38 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:21:38 +0530
+Started PATCH "/articles/11" for 127.0.0.1 at 2016-04-11 12:21:39 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "articles" SET "title" = ?, "content" = ?, "created_by" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "Article"], ["content", "Updated Article"], ["created_by", "User66"], ["updated_at", "2016-04-11 06:51:39.656807"], ["id", 11]]
+  [1m[35m (5008.0ms)[0m  commit transaction
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 5025ms (ActiveRecord: 5009.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:21:44 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:21:44 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:51:44.805098"], ["updated_at", "2016-04-11 06:51:44.805098"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/12
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+Started GET "/articles/12" for 127.0.0.1 at 2016-04-11 12:21:44 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:24:56 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (15.0ms)
+  Rendered articles/new.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 250ms (Views: 216.2ms | ActiveRecord: 0.7ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:24:56 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:24:56 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:24:57 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:54:57.512375"], ["updated_at", "2016-04-11 06:54:57.512375"]]
+  [1m[36m (310.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:35509/articles/12
+Completed 302 Found in 316ms (ActiveRecord: 311.3ms)
+Started GET "/articles/12" for 127.0.0.1 at 2016-04-11 12:24:57 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:24:58 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (18.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:24:58 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:25:13 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (17.1ms)
+  Rendered articles/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 246ms (Views: 218.6ms | ActiveRecord: 0.4ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:25:13 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:25:13 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:25:14 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:55:14.442840"], ["updated_at", "2016-04-11 06:55:14.442840"]]
+  [1m[36m (306.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:60848/articles/13
+Completed 302 Found in 311ms (ActiveRecord: 306.6ms)
+Started GET "/articles/13" for 127.0.0.1 at 2016-04-11 12:25:14 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 13]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:25:14 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:25:14 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:25:27 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.2ms)
+  Rendered articles/new.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 236ms (Views: 209.8ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:25:27 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:25:27 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:25:28 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:55:28.682878"], ["updated_at", "2016-04-11 06:55:28.682878"]]
+  [1m[36m (372.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:32846/articles/14
+Completed 302 Found in 377ms (ActiveRecord: 372.6ms)
+Started GET "/articles/14" for 127.0.0.1 at 2016-04-11 12:25:29 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 14]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:25:29 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:25:29 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:26:01 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.1ms)
+  Rendered articles/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 254ms (Views: 228.3ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:26:01 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:26:01 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:26:02 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:56:02.815573"], ["updated_at", "2016-04-11 06:56:02.815573"]]
+  [1m[36m (255.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:52742/articles/15
+Completed 302 Found in 261ms (ActiveRecord: 256.1ms)
+Started GET "/articles/15" for 127.0.0.1 at 2016-04-11 12:26:03 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 15]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:26:03 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:26:03 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.2ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:27:07 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (15.6ms)
+  Rendered articles/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 238ms (Views: 211.0ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:27:08 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:27:08 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:27:09 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 06:57:09.190944"], ["updated_at", "2016-04-11 06:57:09.190944"]]
+  [1m[36m (300.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:55820/articles/16
+Completed 302 Found in 306ms (ActiveRecord: 300.7ms)
+Started GET "/articles/16" for 127.0.0.1 at 2016-04-11 12:27:09 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 16]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:34:22 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (20.3ms)
+  Rendered articles/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 236ms (Views: 210.4ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:34:23 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:34:23 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:34:23 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 07:04:23.978338"], ["updated_at", "2016-04-11 07:04:23.978338"]]
+  [1m[36m (287.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:55671/articles/17
+Completed 302 Found in 293ms (ActiveRecord: 287.8ms)
+Started GET "/articles/17" for 127.0.0.1 at 2016-04-11 12:34:24 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:34:24 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:34:24 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:37:12 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (17.1ms)
+  Rendered articles/new.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 251ms (Views: 226.4ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:37:13 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:37:13 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:37:14 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 07:07:14.216327"], ["updated_at", "2016-04-11 07:07:14.216327"]]
+  [1m[36m (244.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:53602/articles/18
+Completed 302 Found in 250ms (ActiveRecord: 244.9ms)
+Started GET "/articles/18" for 127.0.0.1 at 2016-04-11 12:37:14 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 18]]
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/18" for 127.0.0.1 at 2016-04-11 12:37:14 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 18]]
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:37:14 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:37:14 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:37:30 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.6ms)
+  Rendered articles/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 251ms (Views: 223.6ms | ActiveRecord: 0.5ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:37:31 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:37:31 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:37:32 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 07:07:32.172178"], ["updated_at", "2016-04-11 07:07:32.172178"]]
+  [1m[36m (302.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:59722/articles/19
+Completed 302 Found in 308ms (ActiveRecord: 302.8ms)
+Started GET "/articles/19" for 127.0.0.1 at 2016-04-11 12:37:32 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/19" for 127.0.0.1 at 2016-04-11 12:37:32 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:37:32 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 12:37:32 +0530
+Processing by ArticlesController#index as HTML
+  [1m[35mUlogin Load (0.1ms)[0m  SELECT  "ulogins".* FROM "ulogins"  ORDER BY "ulogins"."id" ASC LIMIT 1
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1[0m
+Started GET "/articles/19/edit" for 127.0.0.1 at 2016-04-11 12:38:58 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered articles/_form.html.erb (17.0ms)
+  Rendered articles/edit.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 233ms (Views: 218.3ms | ActiveRecord: 0.3ms)
+Started GET "/assets/application-0723cb9a2dd5a514d954f70e0fe0b89f6f9f1ae3a375c182f43b5f2b57e9c869.css" for 127.0.0.1 at 2016-04-11 12:38:59 +0530
+Started GET "/assets/application-b58bf2f21a591705eb73d9f8f520971cb275a68bfdb290c110d8a3207888feda.js" for 127.0.0.1 at 2016-04-11 12:38:59 +0530
+Started PATCH "/articles/19" for 127.0.0.1 at 2016-04-11 12:39:00 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"19"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 19]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "articles" SET "title" = ?, "content" = ?, "created_by" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["title", "Article"], ["content", "Updated Article"], ["created_by", "User66"], ["updated_at", "2016-04-11 07:09:00.128964"], ["id", 19]]
+  [1m[35m (5007.8ms)[0m  commit transaction
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 5013ms (ActiveRecord: 5008.6ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 12:39:05 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 12:39:05 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "content", "created_by", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "My Article"], ["content", "Article"], ["created_by", "Admin"], ["created_at", "2016-04-11 07:09:05.262648"], ["updated_at", "2016-04-11 07:09:05.262648"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/20
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+Started GET "/articles/20" for 127.0.0.1 at 2016-04-11 12:39:05 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 20]]
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY "articles"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (47.2ms)[0m  [1mDROP DATABASE IF EXISTS `test_demo`[0m
+  [1m[35m (0.2ms)[0m  CREATE DATABASE `test_demo` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`
+  [1m[36m (84.9ms)[0m  [1mCREATE TABLE `articles` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `content` text, `created_by` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (88.7ms)[0m  CREATE TABLE `articles_categories` (`article_id` int(11) NOT NULL, `category_id` int(11) NOT NULL) ENGINE=InnoDB
+  [1m[36m (88.6ms)[0m  [1mCREATE TABLE `categories` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (88.5ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `commenter` varchar(255), `body` text, `article_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (178.2ms)[0m  [1mCREATE  INDEX `index_comments_on_article_id`  ON `comments` (`article_id`) [0m
+  [1m[35m (87.7ms)[0m  CREATE TABLE `logins` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `password_digest` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (66.2ms)[0m  [1mCREATE TABLE `roles` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (66.4ms)[0m  CREATE TABLE `ulogins` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `emali` varchar(255), `encrypted_password` varchar(255), `salt` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (88.6ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (64.2ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (178.3ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (34.9ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160405072844')[0m
+  [1m[35m (33.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160401085620')
+  [1m[36m (33.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160401085408')[0m
+  [1m[35m (33.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160401085525')
+  [1m[36m (33.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160404043926')[0m
+  [1m[35m (33.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160404053859')
+  [1m[36m (33.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160401085509')[0m
+  [1m[35m (33.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160401085423')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:21:43 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (31.9ms)
+  Rendered articles/new.html.erb within layouts/application (34.5ms)
+Completed 500 Internal Server Error in 317ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:22:50 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (9.7ms)
+  Rendered articles/new.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 234ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:24:13 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (12.1ms)
+  Rendered articles/new.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 284ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:27:21 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (12.0ms)
+  Rendered articles/new.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 281ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:28:52 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (9.9ms)
+  Rendered articles/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 1136ms (Views: 1125.5ms | ActiveRecord: 0.7ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:28:53 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:28:53 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:28:54 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 07:58:54.783887', '2016-04-11 07:58:54.783887')
+  [1m[36m (74.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:46814/articles/1
+Completed 302 Found in 85ms (ActiveRecord: 74.7ms)
+Started GET "/articles/1" for 127.0.0.1 at 2016-04-11 13:28:54 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/1/edit" for 127.0.0.1 at 2016-04-11 13:28:55 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1
+  Rendered articles/_form.html.erb (1.6ms)
+  Rendered articles/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+Started PATCH "/articles/1" for 127.0.0.1 at 2016-04-11 13:28:55 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 07:58:55.098255' WHERE `articles`.`id` = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/1
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/articles/1" for 127.0.0.1 at 2016-04-11 13:28:55 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 1 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (71.8ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:29:26 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (10.2ms)
+  Rendered articles/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 297ms (Views: 286.0ms | ActiveRecord: 0.7ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:29:27 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:29:27 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:29:28 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 07:59:28.190400', '2016-04-11 07:59:28.190400')
+  [1m[36m (68.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:58592/articles/2
+Completed 302 Found in 80ms (ActiveRecord: 68.5ms)
+Started GET "/articles/2" for 127.0.0.1 at 2016-04-11 13:29:28 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/2/edit" for 127.0.0.1 at 2016-04-11 13:29:28 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  Rendered articles/_form.html.erb (1.7ms)
+  Rendered articles/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/2" for 127.0.0.1 at 2016-04-11 13:29:28 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 07:59:28.465776' WHERE `articles`.`id` = 2[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/2
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/articles/2" for 127.0.0.1 at 2016-04-11 13:29:28 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (32.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/2/edit" for 127.0.0.1 at 2016-04-11 13:29:50 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1
+  Rendered articles/_form.html.erb (11.0ms)
+  Rendered articles/edit.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 299ms (Views: 293.0ms | ActiveRecord: 0.3ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:29:50 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:29:50 +0530
+Started PATCH "/articles/2" for 127.0.0.1 at 2016-04-11 13:29:51 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 07:59:51.860215' WHERE `articles`.`id` = 2[0m
+  [1m[35m (82.3ms)[0m  COMMIT
+Redirected to http://127.0.0.1:39784/articles/2
+Completed 302 Found in 94ms (ActiveRecord: 82.9ms)
+Started GET "/articles/2" for 127.0.0.1 at 2016-04-11 13:29:51 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 2 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:30:23 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (10.2ms)
+  Rendered articles/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 287ms (Views: 276.6ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:30:23 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:30:23 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:30:24 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:00:24.424088', '2016-04-11 08:00:24.424088')
+  [1m[36m (68.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:60437/articles/3
+Completed 302 Found in 80ms (ActiveRecord: 69.2ms)
+Started GET "/articles/3" for 127.0.0.1 at 2016-04-11 13:30:24 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 3 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:30:35 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (12.2ms)
+  Rendered articles/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 305ms (Views: 293.3ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:30:35 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:30:35 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:30:36 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:00:36.630658', '2016-04-11 08:00:36.630658')
+  [1m[36m (58.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:49595/articles/4
+Completed 302 Found in 69ms (ActiveRecord: 58.8ms)
+Started GET "/articles/4" for 127.0.0.1 at 2016-04-11 13:30:36 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/4/edit" for 127.0.0.1 at 2016-04-11 13:30:36 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1
+  Rendered articles/_form.html.erb (2.5ms)
+  Rendered articles/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+Started PATCH "/articles/4" for 127.0.0.1 at 2016-04-11 13:30:36 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"4"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:00:36.899376' WHERE `articles`.`id` = 4[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/4
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+Started GET "/articles/4" for 127.0.0.1 at 2016-04-11 13:30:36 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 4 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (29.7ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:32:05 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (10.3ms)
+  Rendered articles/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 298ms (Views: 287.0ms | ActiveRecord: 0.7ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:32:05 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:32:05 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:32:06 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:02:06.464194', '2016-04-11 08:02:06.464194')
+  [1m[36m (42.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:50116/articles/5
+Completed 302 Found in 53ms (ActiveRecord: 42.4ms)
+Started GET "/articles/5" for 127.0.0.1 at 2016-04-11 13:32:06 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/5/edit" for 127.0.0.1 at 2016-04-11 13:32:06 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1
+  Rendered articles/_form.html.erb (2.4ms)
+  Rendered articles/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+Started PATCH "/articles/5" for 127.0.0.1 at 2016-04-11 13:32:06 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"5"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:02:06.721613' WHERE `articles`.`id` = 5[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/5
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+Started GET "/articles/5" for 127.0.0.1 at 2016-04-11 13:32:06 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 5 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (34.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:32:35 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (9.9ms)
+  Rendered articles/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 293ms (Views: 282.9ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:32:35 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:32:35 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:32:36 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:02:36.367603', '2016-04-11 08:02:36.367603')
+  [1m[36m (66.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:37944/articles/6
+Completed 302 Found in 82ms (ActiveRecord: 66.3ms)
+Started GET "/articles/6" for 127.0.0.1 at 2016-04-11 13:32:36 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 6 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/6/edit" for 127.0.0.1 at 2016-04-11 13:32:36 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 6 LIMIT 1
+  Rendered articles/_form.html.erb (1.4ms)
+  Rendered articles/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+Started PATCH "/articles/6" for 127.0.0.1 at 2016-04-11 13:32:36 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"6"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:02:36.651167' WHERE `articles`.`id` = 6[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/6
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+Started GET "/articles/6" for 127.0.0.1 at 2016-04-11 13:32:36 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 6 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (43.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:32:55 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (16.3ms)
+  Rendered articles/new.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 310ms (Views: 300.0ms | ActiveRecord: 0.7ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:32:55 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:32:55 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:32:56 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:02:56.905297', '2016-04-11 08:02:56.905297')
+  [1m[36m (66.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:40213/articles/7
+Completed 302 Found in 78ms (ActiveRecord: 67.0ms)
+Started GET "/articles/7" for 127.0.0.1 at 2016-04-11 13:32:56 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/7/edit" for 127.0.0.1 at 2016-04-11 13:32:57 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+Started PATCH "/articles/7" for 127.0.0.1 at 2016-04-11 13:32:57 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"7"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:02:57.241038' WHERE `articles`.`id` = 7[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/7
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+Started GET "/articles/7" for 127.0.0.1 at 2016-04-11 13:32:57 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (37.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/7/edit" for 127.0.0.1 at 2016-04-11 13:33:17 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1
+  Rendered articles/_form.html.erb (11.1ms)
+  Rendered articles/edit.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 253ms (Views: 249.5ms | ActiveRecord: 0.2ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:33:17 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:33:17 +0530
+Started PATCH "/articles/7" for 127.0.0.1 at 2016-04-11 13:33:18 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"7"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:03:18.676477' WHERE `articles`.`id` = 7[0m
+  [1m[35m (90.1ms)[0m  COMMIT
+Redirected to http://127.0.0.1:45775/articles/7
+Completed 302 Found in 103ms (ActiveRecord: 90.7ms)
+Started GET "/articles/7" for 127.0.0.1 at 2016-04-11 13:33:18 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 7 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:33:18 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.6ms)
+  Rendered articles/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:33:18 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:03:18.975224', '2016-04-11 08:03:18.975224')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/8
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+Started GET "/articles/8" for 127.0.0.1 at 2016-04-11 13:33:18 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 8 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (42.6ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:34:56 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (12.3ms)
+  Rendered articles/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 306ms (Views: 293.1ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:34:56 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:34:56 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:34:57 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:04:57.707378', '2016-04-11 08:04:57.707378')
+  [1m[36m (69.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:45056/articles/9
+Completed 302 Found in 80ms (ActiveRecord: 69.4ms)
+Started GET "/articles/9" for 127.0.0.1 at 2016-04-11 13:34:57 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/9/edit" for 127.0.0.1 at 2016-04-11 13:34:57 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1
+  Rendered articles/_form.html.erb (2.3ms)
+  Rendered articles/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+Started PATCH "/articles/9" for 127.0.0.1 at 2016-04-11 13:34:57 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"9"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:04:57.987850' WHERE `articles`.`id` = 9[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/9
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+Started GET "/articles/9" for 127.0.0.1 at 2016-04-11 13:34:57 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 9 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (38.9ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:37:17 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (11.2ms)
+  Rendered articles/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 303ms (Views: 289.6ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:37:17 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:37:17 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:37:18 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:07:18.355004', '2016-04-11 08:07:18.355004')
+  [1m[36m (67.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:59924/articles/10
+Completed 302 Found in 79ms (ActiveRecord: 67.9ms)
+Started GET "/articles/10" for 127.0.0.1 at 2016-04-11 13:37:18 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/10/edit" for 127.0.0.1 at 2016-04-11 13:37:20 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+Started PATCH "/articles/10" for 127.0.0.1 at 2016-04-11 13:37:20 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"10"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:07:20.682870' WHERE `articles`.`id` = 10[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/10
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+Started GET "/articles/10" for 127.0.0.1 at 2016-04-11 13:37:20 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 10 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (73.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:38:06 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (11.3ms)
+  Rendered articles/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 293ms (Views: 281.8ms | ActiveRecord: 0.7ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:38:06 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:38:06 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:38:07 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:08:07.427257', '2016-04-11 08:08:07.427257')
+  [1m[36m (81.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:41598/articles/11
+Completed 302 Found in 92ms (ActiveRecord: 81.7ms)
+Started GET "/articles/11" for 127.0.0.1 at 2016-04-11 13:38:07 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 11 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 13:38:07 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.2ms)[0m  [1mSELECT  `ulogins`.* FROM `ulogins`  ORDER BY `ulogins`.`id` ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 7ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1
+Started GET "/articles/11/edit" for 127.0.0.1 at 2016-04-11 13:38:07 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 11 LIMIT 1[0m
+  Rendered articles/_form.html.erb (1.8ms)
+  Rendered articles/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+Started PATCH "/articles/11" for 127.0.0.1 at 2016-04-11 13:38:08 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"11"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:08:08.157947' WHERE `articles`.`id` = 11
+  [1m[36m (63.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:41598/articles/11
+Completed 302 Found in 69ms (ActiveRecord: 63.4ms)
+Started GET "/articles/11" for 127.0.0.1 at 2016-04-11 13:38:08 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 11 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:38:28 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (12.1ms)
+  Rendered articles/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 311ms (Views: 296.8ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:38:28 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:38:28 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:38:29 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:08:29.751456', '2016-04-11 08:08:29.751456')
+  [1m[36m (79.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:57757/articles/12
+Completed 302 Found in 91ms (ActiveRecord: 80.0ms)
+Started GET "/articles/12" for 127.0.0.1 at 2016-04-11 13:38:29 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 12 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/12/edit" for 127.0.0.1 at 2016-04-11 13:38:30 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 12 LIMIT 1
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/12" for 127.0.0.1 at 2016-04-11 13:38:30 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"12"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 12 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:08:30.044071' WHERE `articles`.`id` = 12[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/12
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/articles/12" for 127.0.0.1 at 2016-04-11 13:38:30 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 12 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (59.5ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:38:40 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (10.1ms)
+  Rendered articles/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 292ms (Views: 281.1ms | ActiveRecord: 0.7ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:38:41 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:38:41 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:38:41 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:08:41.999951', '2016-04-11 08:08:41.999951')
+  [1m[36m (70.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:46507/articles/13
+Completed 302 Found in 81ms (ActiveRecord: 70.4ms)
+Started GET "/articles/13" for 127.0.0.1 at 2016-04-11 13:38:42 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 13 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1[0m
+Started GET "/articles/13/edit" for 127.0.0.1 at 2016-04-11 13:38:42 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 13 LIMIT 1
+  Rendered articles/_form.html.erb (1.6ms)
+  Rendered articles/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/13" for 127.0.0.1 at 2016-04-11 13:38:42 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"13"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 13 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:08:42.279736' WHERE `articles`.`id` = 13[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/articles/13
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+Started GET "/articles/13" for 127.0.0.1 at 2016-04-11 13:38:42 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 13 LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (41.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:39:13 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (10.4ms)
+  Rendered articles/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 262ms (Views: 250.8ms | ActiveRecord: 0.8ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:39:14 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:39:14 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:39:15 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:09:15.186374', '2016-04-11 08:09:15.186374')
+  [1m[36m (79.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:46793/articles/14
+Completed 302 Found in 89ms (ActiveRecord: 79.4ms)
+Started GET "/articles/14" for 127.0.0.1 at 2016-04-11 13:39:15 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 14 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 13:39:15 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  `ulogins`.* FROM `ulogins`  ORDER BY `ulogins`.`id` ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1
+Started GET "/articles/14/edit" for 127.0.0.1 at 2016-04-11 13:39:15 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 14 LIMIT 1[0m
+  Rendered articles/_form.html.erb (2.1ms)
+  Rendered articles/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/14" for 127.0.0.1 at 2016-04-11 13:39:15 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"14"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 14 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:09:15.915720' WHERE `articles`.`id` = 14
+  [1m[36m (70.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:46793/articles/14
+Completed 302 Found in 76ms (ActiveRecord: 71.1ms)
+Started GET "/articles/14" for 127.0.0.1 at 2016-04-11 13:39:15 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 14 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:41:41 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (9.6ms)
+  Rendered articles/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 293ms (Views: 282.7ms | ActiveRecord: 0.7ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:41:41 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:41:41 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:41:42 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:11:42.846005', '2016-04-11 08:11:42.846005')
+  [1m[36m (79.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:40631/articles/15
+Completed 302 Found in 91ms (ActiveRecord: 79.6ms)
+Started GET "/articles/15" for 127.0.0.1 at 2016-04-11 13:41:42 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 15 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 13:41:43 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  `ulogins`.* FROM `ulogins`  ORDER BY `ulogins`.`id` ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 7ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1
+Started GET "/articles/15/edit" for 127.0.0.1 at 2016-04-11 13:41:43 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 15 LIMIT 1[0m
+  Rendered articles/_form.html.erb (2.1ms)
+  Rendered articles/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/15" for 127.0.0.1 at 2016-04-11 13:41:43 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"15"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 15 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:11:43.578212' WHERE `articles`.`id` = 15
+  [1m[36m (74.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:40631/articles/15
+Completed 302 Found in 80ms (ActiveRecord: 74.8ms)
+Started GET "/articles/15" for 127.0.0.1 at 2016-04-11 13:41:43 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 15 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/articles/new" for 127.0.0.1 at 2016-04-11 13:44:52 +0530
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (10.3ms)
+  Rendered articles/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 287ms (Views: 275.7ms | ActiveRecord: 0.6ms)
+Started GET "/assets/application-da4f297d22dc04889b3aa5deb542f9337991378bd61e49d5d76f3f2fa22047db.css" for 127.0.0.1 at 2016-04-11 13:44:53 +0530
+Started GET "/assets/application-937417fe190ebdd4416ee823194c70f24d0cabf7a727f37d5295b360f422486e.js" for 127.0.0.1 at 2016-04-11 13:44:53 +0530
+Started POST "/articles" for 127.0.0.1 at 2016-04-11 13:44:54 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"My Article", "content"=>"Article", "created_by"=>"Admin"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `articles` (`title`, `content`, `created_by`, `created_at`, `updated_at`) VALUES ('My Article', 'Article', 'Admin', '2016-04-11 08:14:54.260427', '2016-04-11 08:14:54.260427')
+  [1m[36m (114.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:57160/articles/16
+Completed 302 Found in 125ms (ActiveRecord: 114.4ms)
+Started GET "/articles/16" for 127.0.0.1 at 2016-04-11 13:44:54 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 16 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+Started GET "/articles" for 127.0.0.1 at 2016-04-11 13:44:54 +0530
+Processing by ArticlesController#index as HTML
+  [1m[36mUlogin Load (0.1ms)[0m  [1mSELECT  `ulogins`.* FROM `ulogins`  ORDER BY `ulogins`.`id` ASC LIMIT 1[0m
+  Rendered articles/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY `articles`.`id` DESC LIMIT 1
+Started GET "/articles/16/edit" for 127.0.0.1 at 2016-04-11 13:44:54 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 16 LIMIT 1[0m
+  Rendered articles/_form.html.erb (1.7ms)
+  Rendered articles/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+Started PATCH "/articles/16" for 127.0.0.1 at 2016-04-11 13:44:55 +0530
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "article"=>{"title"=>"Article", "content"=>"Updated Article", "created_by"=>"User66"}, "commit"=>"Update Article", "id"=>"16"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 16 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `articles` SET `title` = 'Article', `content` = 'Updated Article', `created_by` = 'User66', `updated_at` = '2016-04-11 08:14:55.036642' WHERE `articles`.`id` = 16
+  [1m[36m (95.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:57160/articles/16
+Completed 302 Found in 100ms (ActiveRecord: 95.4ms)
+Started GET "/articles/16" for 127.0.0.1 at 2016-04-11 13:44:55 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles` WHERE `articles`.`id` = 16 LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
